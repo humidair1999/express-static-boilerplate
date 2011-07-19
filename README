@@ -1,9 +1,12 @@
-This codebase is simply for my personal Node.js tests.
+This little slice of code(s) is set to act as a very basic, very straightforward set of related and interworking pieces:
 
-Currently, this codebase consists of the following things:
-1.) Node.js HTTP server (test1.js) that serves up some tasty filetypes, declared by the MIMES file in libs
-2.) HTML5 Boilerplate-based HTML5 site hosted on the Node server, using the LESS stylesheet language
+1.) A Node.js HTTP server for serving up static file assets based on a predetermined list of MIME types
+2.) HTML5 boilerplate, already set and configured to work seamlessly with the Node server
+3.) jQuery and a quick little code snippet that pulls in a JSONP stream from Twitter based on a user's given username, and displays a varied-length list of tweets and their profile picture
 
-The site itself allows the user to enter a twitter username, select a number of tweets to display, and then jQuery is used to read Twitter's JSONP and display two things: the twitter user's profile picture and their tweets.
+Nothing too crazy! If you're experimenting with using Node as an HTTP server to host primarily static-content websites, this might be useful for you to look at, read the comments, and dissect.
 
-Simple enough, right?
+By all means, use it in any way you see fit! Enjoy!
+
+- J. Ky Marsh
+http://twitter.com/jkymarsh
