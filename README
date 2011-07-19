@@ -1,0 +1,9 @@
+This codebase is simply for my personal Node.js tests.
+
+Currently, this codebase consists of the following things:
+1.) Node.js HTTP server (test1.js) that serves up some tasty filetypes, declared by the MIMES file in libs
+2.) HTML5 Boilerplate-based HTML5 site hosted on the Node server, using the LESS stylesheet language
+
+The site itself allows the user to enter a twitter username, select a number of tweets to display, and then jQuery is used to read Twitter's JSONP and display two things: the twitter user's profile picture and their tweets.
+
+Simple enough, right?
