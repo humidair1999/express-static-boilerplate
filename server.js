@@ -1,10 +1,32 @@
-var express = require('express'),
-    app = express();
+var path = require('path');
+var express  = require('express');
+// static file compression middleware
+var compress = require('compression');
+// middleware that allows you to parse request body, json, etc.
+var bodyParser = require('body-parser');
+// middleware to allow the general use of PUT and DELETE verbs
+var methodOverride = require('method-override');
+// logging middleware
+var morgan  = require('morgan');
+// middleware to return X-Response-Time with a response
+var responseTime = require('response-time');
+// middleware to serve a favicon prior to all other assets/routes
+var favicon = require('serve-favicon');
 
-var oneDay = 86400000;
+var app = express();
 
-app.use(express.compress());
+app.use(morgan('dev'));
+app.use(responseTime());
 
-app.use(express.static(__dirname + '/public', { maxAge: oneDay }));
+app.use(bodyParser());
+app.use(methodOverride());
+
+app.use(compress());
+
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.listen(process.env.PORT || 3000);
+
+console.log('server started on port: ', process.env.PORT || 3000);
