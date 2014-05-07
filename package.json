@@ -2,7 +2,7 @@
   "name": "express-static-boilerplate",
   "version": "1.0.0",
   "author": "J. Ky Marsh <jkymarsh@gmail.com>",
-  "description": "a simple express.js static file server with h5bp",
+  "description": "a simple express.js static file server with html5bp and some sensible default middlewares",
   "private": true,
   "scripts": {
     "start": "node server.js"
