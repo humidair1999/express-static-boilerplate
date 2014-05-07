@@ -1,19 +1,21 @@
 {
-  "name": "nodejsSimpleBoilerplate",
-  "version": "0.1.0",
+  "name": "express-static-boilerplate",
+  "version": "0.1.1",
   "author": "J. Ky Marsh <jkymarsh@gmail.com>",
-  "description": "a simple node/express static file server with h5bp",
+  "description": "a simple express.js static file server with h5bp",
+  "private": true,
   "scripts": {
-    "start": "node server"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jkymarsh/nodejsSimpleBoilerplate.git"
+    "url": "https://github.com/jkymarsh/express-static-boilerplate.git"
   },
   "keywords": [
     "static",
     "server",
-    "simple"
+    "simple",
+    "express"
   ],
   "dependencies" : {
     "express" : "3.x"
